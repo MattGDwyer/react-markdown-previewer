@@ -4,7 +4,9 @@
   "description": "freecodecamp front end libraries project",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "dev": "webpack serve",
+    "build": "webpack"
   },
   "keywords": [
     "freecodecamp",

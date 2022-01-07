@@ -6,8 +6,15 @@ write  a loop to create 4 color variables
 
 Use flexbox for all this shit
 */
-body {
-  background-color: #a8dadc;
-}
+$dark: #457b9d;
+$accent: #e63946;
+$light: #f1faee;
+$background: #a8dadc;
 
-/*# sourceMappingURL=main.css.map */
+$title: helvetica, sans-serif;
+$border: 1px 1px 1px 1px black;
+
+
+body {
+  background-color: $background;
+}

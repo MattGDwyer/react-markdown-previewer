@@ -15,7 +15,15 @@ module.exports = {
           loader: "babel-loader",
           options: {
             presets: ['@babel/preset-env', '@babel/preset-react']
-          }
+          },
+          loader: 'style-loader',
+          // [css-loader](/loaders/css-loader)
+          loader: 'css-loader',
+            options: {
+              modules: true
+            },
+          // [sass-loader](/loaders/sass-loader)
+          loader: 'sass-loader'
         }
       },
     ]

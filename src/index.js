@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../scss/FileName.scss';
+import '../dist/styles/main.css';
 
 const Header = () => {
   return (
     <header>
       {/*beginning to write react dom*/}
-      <h1 className="title">React Markdown Previewer</h1>
+      <h1 className="title">React MARKDOWN Previewer</h1>
+      <nav className="nav">
+        <ul>
+          <li>Github</li>
+          <li>linkedin</li>
+        </ul>
+      </nav>
     </header>
   );
 };

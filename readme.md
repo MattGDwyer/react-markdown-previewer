@@ -16,6 +16,6 @@ I've heard hiring companies don't like looking at FCC projects as part of one's 
   Working on getting the server up and running before migrating my prior react code over from my past attempt at building this from the ground up. I was a bit confused when I did a tutorial on webpack, and then tried to implement what I learned in this project. Webpack can run a local server "dev", but I'm after deploying on heroku so I'm going to be writing a server that uses express. I'm also going to take a minute and write down the seemingly arduous starting procedure for building a local react app.
 
 
-### January 7, 2022
-  I've gotten it all up and running. Now
+### January 11, 2022
+  I started the day off realizing webpack had an error. It took me a long time to track down as I"m new to webpack. My eventual solution came when I started reading through github's loader docs. I had no idea I had to install each of these laoders using npm. So once I finally installed the necessary loaders, it is working just fine. Now onto styling things out. I am not the greatest with CSS/SASS, so it's going to be good experience. Looking forward to it.
 

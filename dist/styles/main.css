@@ -15,7 +15,26 @@ body {
   background-color: #a8dadc;
 }
 body header {
+  display: inline-flex;
+  justify-content: space-around;
   background-color: #457b9d;
+  width: 100%;
+  height: 10vh;
+}
+body header h1 {
+  margin-left: 20%;
+  padding-top: 5vh;
+}
+body header nav {
+  align-self: flex-end;
+  width: 40%;
+  margin-right: 0;
+  padding-right: 0;
+}
+body header nav ul {
+  display: inline-flex;
+  width: inherit;
+  align-content: space-between;
 }
 
 /*# sourceMappingURL=main.css.map */

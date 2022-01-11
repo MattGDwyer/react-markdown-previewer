@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../dist/styles/main.css';
+import '../dist/styles/main.scss';
 
 const Header = () => {
   return (

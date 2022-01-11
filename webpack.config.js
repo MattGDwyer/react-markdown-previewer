@@ -8,24 +8,25 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.?js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ['@babel/preset-env', '@babel/preset-react']
-          },
-          loader: 'style-loader',
-          // [css-loader](/loaders/css-loader)
-          loader: 'css-loader',
-            options: {
-              modules: true
-            },
-          // [sass-loader](/loaders/sass-loader)
-          loader: 'sass-loader'
-        }
+      {  test: /\.m?js$/,
+         exclude: /node_modules/,
+         use: {
+           loader: "babel-loader",
+           options: {
+             presets: ['@babel/preset-env', '@babel/preset-react']
+           }
+          }
       },
+      { test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          "style-loader",
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Compiles Sass to CSS
+          "sass-loader",
+        ]
+      }
     ]
   },
   plugins: [

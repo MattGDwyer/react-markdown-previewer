@@ -10,6 +10,7 @@ $dark: #457b9d;
 $accent: #e63946;
 $light: #f1faee;
 $background: #a8dadc;
+$shadow: #1d3557;
 
 $title: helvetica, sans-serif;
 $border: 1px 1px 1px 1px black;
@@ -20,6 +21,7 @@ $border: 1px 1px 1px 1px black;
   padding: 0;
 }
 
+
 body {
   background-color: $background;
   scroll-behavior: smooth;
@@ -29,11 +31,22 @@ body {
     justify-content: space-around;
     background-color: $dark;
     width: 100%;
-    height: 10vh;
+    height: 12vh;
+    border-bottom: 4px solid black;
+    box-shadow: .5em .5em .5em $shadow;
 
     span {
-      padding-top: 7vh;
+      margin-top: 7vh;
+      padding: 0 10px 0 10px;
+      display: inline;
+      font-size: 1.5rem;
+      height: 1.5rem;
+
+      img {
+        height: 1.5rem;
+      }
     }
+
     h1 {
       padding-top: 5vh;
     }
@@ -62,4 +75,61 @@ body {
     }
   }
 
+  .app-box {
+    margin-top: 10px;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .sub-header {
+      text-align: center;
+      background-color: $dark;
+    }
+
+    .editor {
+      width: 45vw;
+      border: 1px solid black;
+      margin-left: 10px;
+      box-shadow: .5em .5em .5em $shadow;
+
+
+    }
+
+    .preview {
+      width: 45vw;
+      border: 1px solid black;
+      margin-right: 10px;
+      box-shadow: .5em .5em .5em $shadow;
+    }
+  }
+  footer {
+    margin-top: 20px;
+    display: inline-flex;
+    justify-content: space-around;
+    background-color: $dark;
+    width: 100%;
+    height: 10vh;
+    border-top: 1px solid black;
+
+    ul {
+      width: inherit;
+      margin-top: 20%;
+      // padding-right: 10vw;
+      list-style-type: none;
+      display: inline-flex;
+      flex-wrap: nowrap;
+    }
+
+    li {
+      padding: 0 10px 0 10px;
+      font-size: 1.5rem;
+
+      img {
+        height: 1.5rem;
+
+      }
+    }
+  }
 }

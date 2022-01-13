@@ -27,46 +27,18 @@ module.exports = {
           "sass-loader",
         ]
       },
-      // { test: /\.(jpe?g|png|gif|svg)$/i,
-      //   use: [
-      //     'url-loader?limit=10000',
-      //     'img-loader'
-      //   ]
-      // },
       {
-        test: /\.(png|jpg|gif)$/i,
+        test: /\.(png|jpg|gif|svg)$/i,
         use: [
           {
-            loader: 'file-loader?name=/GitHub-Mark/PNG/GitHub-Mark-32px.png',
+            loader: 'file-loader',
             options: {
+              name: '/dist/[name].[ext]',
               limit: 10000,
             },
           },
         ],
       },
-      {
-        test: /\.(svg)$/i,
-        use: [
-          {
-            loader: 'file-loader?name=linkedin-brands.svg',
-            loader: 'file-loader?name=free-code-camp-brands.svg',
-            options: {
-              limit: 10000,
-            },
-          },
-        ],
-      },
-      // {
-      //   test: /\.(svg)$/i,
-      //   use: [
-      //     {
-      //       loader: 'file-loader?name=free-code-camp-brands.svg',
-      //       options: {
-      //         limit: 10000,
-      //       },
-      //     },
-      //   ],
-      // }
     ]
   },
   plugins: [

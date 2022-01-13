@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack serve",
     "sass": "sass --watch dist/styles:dist/styles",
-    "build": "webpack -w",
+    "heroku-postbuild": "webpack -w",
     "start": "node server.js"
   },
   "keywords": [

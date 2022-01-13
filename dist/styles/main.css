@@ -64,13 +64,13 @@ body .app-box .sub-header {
   text-align: center;
   background-color: #457b9d;
 }
-body .app-box .editor {
+body .app-box .editor-box {
   width: 45vw;
   border: 1px solid black;
   margin-left: 10px;
   box-shadow: 0.5em 0.5em 0.5em #1d3557;
 }
-body .app-box .editor #editor {
+body .app-box .editor-box #editor {
   width: 99%;
   height: 76vh;
   margin-bottom: -5px;
@@ -79,14 +79,19 @@ body .app-box .editor #editor {
   padding-left: 5px;
   padding-top: 5px;
 }
-body .app-box .preview {
+body .app-box .preview-box {
   width: 45vw;
   border: 1px solid black;
   margin-right: 10px;
   box-shadow: 0.5em 0.5em 0.5em #1d3557;
 }
-body .app-box .preview img {
-  max-width: 50%;
+body .app-box .preview-box #preview {
+  margin: 0 5% 0 5%;
+  font-size: 0.875rem;
+}
+body .app-box .preview-box img {
+  margin-top: 10px;
+  max-width: 100%;
 }
 body footer {
   margin-top: 20px;

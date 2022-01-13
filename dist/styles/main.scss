@@ -88,7 +88,7 @@ body {
       background-color: $dark;
     }
 
-    .editor {
+    .editor-box {
       width: 45vw;
       border: 1px solid black;
       margin-left: 10px;
@@ -107,19 +107,20 @@ body {
       }
 
     }
-// change names of preview class and editor class to class-box
-    .preview {
+
+    .preview-box {
       width: 45vw;
       border: 1px solid black;
       margin-right: 10px;
       box-shadow: .5em .5em .5em $shadow;
 
       #preview {
-
+        margin: 0 5% 0 5%;
+        font-size: .875rem;
       }
       img{
-
-        max-width: 50%;
+        margin-top: 10px;
+        max-width: 100%;
       }
     }
   }

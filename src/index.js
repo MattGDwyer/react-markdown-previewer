@@ -29,7 +29,7 @@ const Header = () => {
 };
 const Editor = (props) => {
   return (
-    <div className="editor">
+    <div className="editor-box">
       <div className="sub-header">
       <h2>Editor</h2>
       </div>
@@ -44,7 +44,7 @@ const Editor = (props) => {
   }
   const Preview = (props) => {
     return (
-      <div className="preview">
+      <div className="preview-box">
         <div className="sub-header">
         <h2>Preview</h2>
         </div>

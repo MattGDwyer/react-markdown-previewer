@@ -85,6 +85,9 @@ body .app-box .preview {
   margin-right: 10px;
   box-shadow: 0.5em 0.5em 0.5em #1d3557;
 }
+body .app-box .preview img {
+  max-width: 50%;
+}
 body footer {
   margin-top: 20px;
   display: flex;

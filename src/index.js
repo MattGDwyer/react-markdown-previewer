@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import '../dist/styles/main.scss';
-// import fCCLogo from '../src/assets/free-code-camp-brands.svg';
-// import githubLogo from '../src/assets/Github-Mark-32px.png';
-// import linkedinLogo from '../src/assets/linkedin-brands.svg';
+import fCCLogo from '../dist/assets/free-code-camp-brands.svg';
+import githubLogo from '../dist/assets/Github-Mark-32px.png';
+import linkedinLogo from '../dist/assets/linkedin-brands.svg';
 import { marked } from 'marked';
 
 marked.setOptions({

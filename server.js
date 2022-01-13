@@ -8,7 +8,7 @@ app.get("/", function(req, res) {
 );
 
 app.use(express.static(__dirname + '/dist'));
-app.use(express.static("/dist", `${__dirname}/public`));
+app.use("/dist", express.static(`${__dirname}~~/dist`));
 
 
 

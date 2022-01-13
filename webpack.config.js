@@ -33,7 +33,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '/dist/[name].[ext]',
+              name: '/dist/assets/[name].[ext]',
               limit: 10000,
             },
           },

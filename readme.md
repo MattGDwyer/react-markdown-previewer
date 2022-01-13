@@ -19,3 +19,6 @@ I've heard hiring companies don't like looking at FCC projects as part of one's 
 ### January 11, 2022
   I started the day off realizing webpack had an error. It took me a long time to track down as I"m new to webpack. My eventual solution came when I started reading through github's loader docs. I had no idea I had to install each of these laoders using npm. So once I finally installed the necessary loaders, it is working just fine. Now onto styling things out. I am not the greatest with CSS/SASS, so it's going to be good experience. Looking forward to it.
 
+
+### January 13, 2022
+  Almost there. The lesson learned today is to deploy to heroku often. I hadn't initiated the app on heroku, and now I've got an almost complete (all tests passing) application that I have to spend hours troubleshooting. The issue now is the build is timing out. I've made a list of potential fixes, and will hopefully have this thing in the bag by lunch tomorrow.

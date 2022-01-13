@@ -5,7 +5,28 @@ import fCCLogo from '../dist/assets/free-code-camp-brands.svg';
 import githubLogo from '../dist/assets/Github-Mark-32px.png';
 import linkedinLogo from '../dist/assets/linkedin-brands.svg';
 import { marked } from 'marked';
+// Starting here:
+/*
+https://devcenter.heroku.com/articles/troubleshooting-node-deploys
+i wonder if my devdependencies need to be dependencies
+Could be Blank app log issue. This is most likely.
+Could be too many dependencies at the same time
+Might need to reinstall them half at a time
+Could be that I need to run both scripts at once
+research npm ls to see dependencies not using https
+could be global params in scripts
+Could be You can try to tweak the memory allowed for the node process by passing NODE_OPTIONS="__max_old_space_size=2560"
+Could be:
+After a whole day, and noticing there were some SSL problems with Heroku servers, i noticed i had the configuration config.force_ssl = true on my production.rb file.
 
+So i just tried, and put config.force_ssl = false, and voilá, I'm back to life again!
+
+Well, afterwards i've put it to true again, and still managed to publish again...
+
+Guess this was an heroku thing
+
+
+*/
 marked.setOptions({
   breaks: true
 });

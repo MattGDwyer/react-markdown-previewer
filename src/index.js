@@ -17,7 +17,13 @@ https://devcenter.heroku.com/articles/troubleshooting-node-deploys
 ** update package-lock using npm install
   ..had to force install node newest version. Found an error stating my node was too old.
   worried this will break something.
+  got node and npm updated to latest version. Learned package lock dictates what version npm/node will be updated to.
+  * test run deployment
+  * try npm install again to update package lock
+  * then run on local server to see if I've broken anything else.
+  so I am 0.0.1 version of npm away from where I need to be.
 ** compare procfiles with old projects
+  no difference
 
 Could be Blank app log issue. This is most likely.
 Could be too many dependencies at the same time

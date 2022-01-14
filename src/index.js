@@ -19,11 +19,20 @@ https://devcenter.heroku.com/articles/troubleshooting-node-deploys
   worried this will break something.
   got node and npm updated to latest version. Learned package lock dictates what version npm/node will be updated to.
   * test run deployment
+    fail
   * try npm install again to update package lock
+    done
   * then run on local server to see if I've broken anything else.
+    found a sass environment error. ran npm rebuid node sass fixed it.
+    running locally w/one resource not loading.
   so I am 0.0.1 version of npm away from where I need to be.
 ** compare procfiles with old projects
   no difference
+** found node modules being tracked by grep. Not sure what grep is, but I"m gonna stop them being tracked.
+  so at one point I tracked my node modules. I stopped, but apparently the record of them being tracked impacts the behavior of the build. I'm trying to filter the branch in order to not have to reset the head. We shall see if it works... no dice. I don't know this command I found, so I"m not gonna screw around with it.
+** added node modules, pushed them, and now I'm going to try to remove them again.
+
+
 
 Could be Blank app log issue. This is most likely.
 Could be too many dependencies at the same time

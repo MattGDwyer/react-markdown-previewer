@@ -9,6 +9,16 @@ import { marked } from 'marked';
 /*
 https://devcenter.heroku.com/articles/troubleshooting-node-deploys
 ** i wonder if my devdependencies need to be dependencies
+  tried both ways to fix this. Short answer is that they need to be moved to dependencies.
+** added npm and node versions to "engines" object in package.json
+  no dice
+  checking versions are correct...
+  tried changing node version to exact version. no dice.
+** update package-lock using npm install
+  ..had to force install node newest version. Found an error stating my node was too old.
+  worried this will break something.
+** compare procfiles with old projects
+
 Could be Blank app log issue. This is most likely.
 Could be too many dependencies at the same time
 Might need to reinstall them half at a time

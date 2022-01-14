@@ -8,7 +8,7 @@ import { marked } from 'marked';
 // Starting here:
 /*
 https://devcenter.heroku.com/articles/troubleshooting-node-deploys
-i wonder if my devdependencies need to be dependencies
+** i wonder if my devdependencies need to be dependencies
 Could be Blank app log issue. This is most likely.
 Could be too many dependencies at the same time
 Might need to reinstall them half at a time

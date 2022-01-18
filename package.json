@@ -11,8 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=development NODE_CONFIG_PRODUCTION=false node server.js",
     "sass": "sass --watch dist/styles:dist/styles",
-    "heroku-postbuild": "webpack -w",
-    "webpack-dev-server": "^4.7.2"
+    "heroku-postbuild": "webpack -w"
+
   },
   "keywords": [
     "freecodecamp",
@@ -55,6 +55,7 @@
     "style-loader": "^3.3.1",
     "url-loader": "^4.1.1",
     "webpack": "^5.66.0",
-    "webpack-cli": "^4.9.1"
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2"
   }
 }

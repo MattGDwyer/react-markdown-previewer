@@ -22,3 +22,7 @@ I've heard hiring companies don't like looking at FCC projects as part of one's 
 
 ### January 13, 2022
   Almost there. The lesson learned today is to deploy to heroku often. I hadn't initiated the app on heroku, and now I've got an almost complete (all tests passing) application that I have to spend hours troubleshooting. The issue now is the build is timing out. I've made a list of potential fixes, and will hopefully have this thing in the bag by lunch tomorrow.
+
+### January 18, 2022
+  I've hit a pretty hard wall trying to deploy to heroku. I've chased down a bunch of issues that it could be, and I continue to do so. I'll be starting a ticket with heroku today. Currently the build is successful until it hits webpack. Then webpack "compiles successfully" over and over until the build finally fails.
+

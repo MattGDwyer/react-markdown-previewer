@@ -31,24 +31,10 @@ https://devcenter.heroku.com/articles/troubleshooting-node-deploys
 ** found node modules being tracked by grep. Not sure what grep is, but I"m gonna stop them being tracked.
   so at one point I tracked my node modules. I stopped, but apparently the record of them being tracked impacts the behavior of the build. I'm trying to filter the branch in order to not have to reset the head. We shall see if it works... no dice. I don't know this command I found, so I"m not gonna screw around with it.
 ** added node modules, pushed them, and now I'm going to try to remove them again.
+  *** PUTTING A PIN IN THIS: removed them, but when I run grep there are still a bunch listed.
+** address NPM error in build
+** Brave new errors. Now webpack is cycling multiple times a second, each time it compiles a small bit more data. I'm thinking somehow node modules is being added still. Not sure. Need to start a new ticket.
 
-
-
-Could be Blank app log issue. This is most likely.
-Could be too many dependencies at the same time
-Might need to reinstall them half at a time
-Could be that I need to run both scripts at once
-research npm ls to see dependencies not using https
-could be global params in scripts
-Could be You can try to tweak the memory allowed for the node process by passing NODE_OPTIONS="__max_old_space_size=2560"
-Could be:
-After a whole day, and noticing there were some SSL problems with Heroku servers, i noticed i had the configuration config.force_ssl = true on my production.rb file.
-
-So i just tried, and put config.force_ssl = false, and voilá, I'm back to life again!
-
-Well, afterwards i've put it to true again, and still managed to publish again...
-
-Guess this was an heroku thing
 
 
 */

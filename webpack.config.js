@@ -4,8 +4,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   watchOptions: {
-    ignored: /node_modules/
-  }
+    ignored: /node_modules/,
+    ignored: /styles/,
+    ignored: /dist/
+  },
   entry: path.join(__dirname, "src", "index.js"),
   output: {
     path:path.resolve(__dirname, "dist"),

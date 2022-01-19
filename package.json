@@ -43,7 +43,7 @@
     "style-loader": "^3.3.1",
     "url-loader": "^4.1.1",
     "webpack": "^5.66.0",
-    "webpack-cli": "^4.9.1"
+    "webpack-cli": "^4.x.x"
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",
@@ -58,7 +58,7 @@
     "style-loader": "^3.3.1",
     "url-loader": "^4.1.1",
     "webpack": "^5.66.0",
-    "webpack-cli": "^4.9.1",
+    "webpack-cli": "^4.x.x",
     "webpack-dev-server": "^4.7.2"
   }
 }

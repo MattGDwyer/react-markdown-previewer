@@ -58,6 +58,7 @@ body .app-box {
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 body .app-box .sub-header {
@@ -69,12 +70,12 @@ body .app-box .editor-box {
   border: 1px solid black;
   margin-left: 10px;
   box-shadow: 0.5em 0.5em 0.5em #1d3557;
+  min-width: 550px;
 }
 body .app-box .editor-box #editor {
   width: 99%;
   height: 76vh;
   margin-bottom: -5px;
-  resize: vertical;
   outline: none;
   padding-left: 5px;
   padding-top: 5px;
@@ -84,6 +85,7 @@ body .app-box .preview-box {
   border: 1px solid black;
   margin-right: 10px;
   box-shadow: 0.5em 0.5em 0.5em #1d3557;
+  min-width: 550px;
 }
 body .app-box .preview-box #preview {
   margin: 0 5% 0 5%;
@@ -91,7 +93,8 @@ body .app-box .preview-box #preview {
 }
 body .app-box .preview-box img {
   margin-top: 10px;
-  max-width: 100%;
+  width: 50%;
+  margin-left: 25%;
 }
 body footer {
   margin-top: 20px;
@@ -123,6 +126,61 @@ body footer nav li {
 }
 body footer nav li img {
   height: 1.5rem;
+}
+
+@media only screen and (max-width: 1125px) {
+  body {
+    height: 200vh;
+  }
+  body header {
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  body .app-box {
+    margin: 10px 0 10px 0;
+    height: 90%;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  body .app-box .sub-header {
+    text-align: center;
+    background-color: #457b9d;
+  }
+  body .app-box .editor-box {
+    width: 90%;
+    border: 1px solid black;
+    margin: 10px;
+    box-shadow: 0.5em 0.5em 0.5em #1d3557;
+    min-width: 550px;
+  }
+  body .app-box .editor-box #editor {
+    width: 99%;
+    height: 76vh;
+    margin-bottom: -5px;
+    outline: none;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+  body .app-box .preview-box {
+    width: 45vw;
+    border: 1px solid black;
+    margin: 10px;
+    box-shadow: 0.5em 0.5em 0.5em #1d3557;
+    min-width: 550px;
+  }
+  body .app-box .preview-box #preview {
+    margin: 0 5% 0 5%;
+    font-size: 0.875rem;
+  }
+  body .app-box .preview-box img {
+    margin-top: 10px;
+    width: 50%;
+    margin-left: 25%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

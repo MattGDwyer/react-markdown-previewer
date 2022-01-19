@@ -26,3 +26,5 @@ I've heard hiring companies don't like looking at FCC projects as part of one's 
 ### January 18, 2022
   I've hit a pretty hard wall trying to deploy to heroku. I've chased down a bunch of issues that it could be, and I continue to do so. I'll be starting a ticket with heroku today. Currently the build is successful until it hits webpack. Then webpack "compiles successfully" over and over until the build finally fails.
 
+### January 19, 2022
+  Finally successfully deployed the site on heroku. The final solution was to tweak my heroku config settings. It appears I was installing dependencies and then immediately pruning them. Success! Wow. That took me a few days to figure out. Along the way I've learned how to check for memory leaks, the intricacies of deploying with heroku, a ton about package.json, and installing dependencies, and a whole lot more. I'll take it!

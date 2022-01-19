@@ -81,6 +81,7 @@ body {
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
 
     .sub-header {
@@ -93,6 +94,7 @@ body {
       border: 1px solid black;
       margin-left: 10px;
       box-shadow: .5em .5em .5em $shadow;
+      min-width: 550px;
 
       #editor {
         // width: 99%;
@@ -100,7 +102,7 @@ body {
         width: 99%;
         height: 76vh;
         margin-bottom: -5px;
-        resize: vertical;
+        // resize: vertical;
         outline: none;
         padding-left: 5px;
         padding-top: 5px;
@@ -113,6 +115,7 @@ body {
       border: 1px solid black;
       margin-right: 10px;
       box-shadow: .5em .5em .5em $shadow;
+      min-width: 550px;
 
       #preview {
         margin: 0 5% 0 5%;
@@ -120,7 +123,8 @@ body {
       }
       img{
         margin-top: 10px;
-        max-width: 100%;
+        width: 50%;
+        margin-left: 25%;
       }
     }
   }
@@ -164,5 +168,71 @@ body {
       }
     }
 
+  }
+}
+
+@media only screen and (max-width: 1125px) {
+  body {
+    height: 200vh;
+
+    header {
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .app-box {
+      margin: 10px 0 10px 0;
+      height: 90%;
+      width: 100vw;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      .sub-header {
+        text-align: center;
+        background-color: $dark;
+      }
+
+      .editor-box {
+        width: 90%;
+        border: 1px solid black;
+        margin: 10px;
+        box-shadow: .5em .5em .5em $shadow;
+        min-width: 550px;
+
+        #editor {
+          // width: 99%;
+          // height: inherit;
+          width: 99%;
+          height: 76vh;
+          margin-bottom: -5px;
+          // resize: vertical;
+          outline: none;
+          padding-left: 5px;
+          padding-top: 5px;
+        }
+
+      }
+
+      .preview-box {
+        width: 45vw;
+        border: 1px solid black;
+        margin: 10px;
+        box-shadow: .5em .5em .5em $shadow;
+        min-width: 550px;
+
+        #preview {
+          margin: 0 5% 0 5%;
+          font-size: .875rem;
+        }
+        img {
+          margin-top: 10px;
+          width: 50%;
+          margin-left: 25%;
+        }
+      }
+    }
   }
 }

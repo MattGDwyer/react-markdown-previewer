@@ -12,7 +12,7 @@
     "heroku-prebuild": "npm install --dev",
     "start": "NODE_ENV=production node server.js",
     "sass": "sass --watch dist/styles:dist/styles",
-    "heroku-postbuild": "webpack -w"
+    "heroku-postbuild": "webpack --mode production"
 
   },
   "keywords": [

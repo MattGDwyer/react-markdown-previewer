@@ -1,25 +1,32 @@
-/*
-preview wraps at 1125 x 681
-current issues
-preview side gets larger @1149 x 681
-editor and preview stop resizing at 567x681
-  editor and preview keep left margin as well
-header and footer start shrinking to the left at about 540x681
-  could be margin
-header text wraps at about 525x681
-*/
 * {
   margin: 0;
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+}
+
+html {
+  border: 1px solid blue;
+}
+
 body {
   background-color: #a8dadc;
   scroll-behavior: smooth;
-  width: 100%;
+  border: 1px solid black;
+}
+body .flexbox {
   height: 100%;
-  margin: 0;
-  padding: 0;
+  widht: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  border: 1px solid red;
 }
 body header {
   width: 100%;
@@ -30,7 +37,7 @@ body header {
   justify-content: space-around;
   background-color: #457b9d;
   border-bottom: 4px solid black;
-  box-shadow: 0.5em 0.5em 0.5em #1d3557;
+  box-shadow: 0px 0.5em 0.5em #1d3557;
 }
 body header span {
   margin-top: 7vh;
@@ -64,10 +71,11 @@ body .app-box {
   margin-top: 10px;
   height: 80vh;
   width: 100vw;
+  min-height: 80%;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-around;
 }
 body .app-box .sub-header {
   text-align: center;
@@ -95,7 +103,7 @@ body .app-box .preview-box {
   min-width: 550px;
 }
 body .app-box .preview-box #preview {
-  margin: -5% 5% -5% 5%;
+  margin: 2.5% 5% -5% 5%;
   font-size: 0.875rem;
 }
 body .app-box .preview-box img {
@@ -106,7 +114,7 @@ body .app-box .preview-box img {
 body footer {
   margin-top: 20px;
   width: 100%;
-  height: 10vh;
+  height: 70px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -133,61 +141,6 @@ body footer nav li {
 }
 body footer nav li img {
   height: 1.5rem;
-}
-
-@media only screen and (max-width: 1125px) {
-  body {
-    height: 200vh;
-  }
-  body header {
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  body .app-box {
-    margin: 10px 0 10px 0;
-    height: 90%;
-    width: 100vw;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  body .app-box .sub-header {
-    text-align: center;
-    background-color: #457b9d;
-  }
-  body .app-box .editor-box {
-    width: 90%;
-    border: 1px solid black;
-    margin: 10px;
-    box-shadow: 0.5em 0.5em 0.5em #1d3557;
-    min-width: 550px;
-  }
-  body .app-box .editor-box #editor {
-    width: 99%;
-    height: 76vh;
-    margin-bottom: -5px;
-    outline: none;
-    padding-left: 5px;
-    padding-top: 5px;
-  }
-  body .app-box .preview-box {
-    width: 45vw;
-    border: 1px solid black;
-    margin: 10px;
-    box-shadow: 0.5em 0.5em 0.5em #1d3557;
-    min-width: 550px;
-  }
-  body .app-box .preview-box #preview {
-    margin: 0 5% 0 5%;
-    font-size: 0.875rem;
-  }
-  body .app-box .preview-box img {
-    margin-top: 10px;
-    width: 50%;
-    margin-left: 25%;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

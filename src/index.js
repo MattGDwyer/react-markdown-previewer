@@ -120,7 +120,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div class="flexbox">
         <Header />
         <div className="app-box">
           <Editor markdown={this.state.markdown} onChange={this.handleChange}/>

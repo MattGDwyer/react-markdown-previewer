@@ -1,10 +1,12 @@
 /*
-import menlo and another non-cody font
-make a variable for titles font, weight, border-bottom
-make sure to use nesting in all this.
-write  a loop to create 4 color variables
-
-Use flexbox for all this
+preview wraps at 1125 x 681
+current issues
+preview side gets larger @1149 x 681
+editor and preview stop resizing at 567x681
+  editor and preview keep left margin as well
+header and footer start shrinking to the left at about 540x681
+  could be margin
+header text wraps at about 525x681
 */
 * {
   margin: 0;
@@ -14,13 +16,19 @@ Use flexbox for all this
 body {
   background-color: #a8dadc;
   scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 body header {
+  width: 100%;
+  height: 12vh;
+  margin: 0;
+  padding: 0;
   display: inline-flex;
   justify-content: space-around;
   background-color: #457b9d;
-  width: 100%;
-  height: 12vh;
   border-bottom: 4px solid black;
   box-shadow: 0.5em 0.5em 0.5em #1d3557;
 }
@@ -70,7 +78,6 @@ body .app-box .editor-box {
   border: 1px solid black;
   margin-left: 10px;
   box-shadow: 0.5em 0.5em 0.5em #1d3557;
-  min-width: 550px;
 }
 body .app-box .editor-box #editor {
   width: 99%;
@@ -88,7 +95,7 @@ body .app-box .preview-box {
   min-width: 550px;
 }
 body .app-box .preview-box #preview {
-  margin: 0 5% 0 5%;
+  margin: -5% 5% -5% 5%;
   font-size: 0.875rem;
 }
 body .app-box .preview-box img {
@@ -98,12 +105,12 @@ body .app-box .preview-box img {
 }
 body footer {
   margin-top: 20px;
+  width: 100%;
+  height: 10vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background-color: #457b9d;
-  width: 100%;
-  height: 10vh;
   border-top: 1px solid black;
 }
 body footer h3 {
